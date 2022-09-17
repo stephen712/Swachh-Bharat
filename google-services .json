@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "18803143462",
+    "firebase_url": "https://swach-db5e8.firebaseio.com",
+    "project_id": "swach-db5e8",
+    "storage_bucket": "swach-db5e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18803143462:android:2b214d11553e7193",
+        "android_client_info": {
+          "package_name": "com.app.swachhbharat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18803143462-8t388sf5job3r38n6s6a75cbgj9jnv2c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWRYzPQgcOMSL4jdOd1Li9ltFKdIZC5xM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18803143462-8t388sf5job3r38n6s6a75cbgj9jnv2c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

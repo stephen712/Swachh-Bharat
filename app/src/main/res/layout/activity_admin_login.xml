@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLogin"
+    android:background="@drawable/background_gradient">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_login"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="28sp"
+        android:fontFamily="@font/lato"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:hint="@string/enter_password"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:inputType="textPassword"
+        android:id="@+id/password_admin"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/password_admin"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/buttons_layout"
+        android:text="@string/continue_"
+        android:textColor="#000000"
+        android:id="@+id/continue_"
+        android:shadowRadius="30"
+        android:shadowDy="30"
+        android:shadowDx="30"
+        android:layout_marginBottom="50dp"
+        />
+
+</RelativeLayout>

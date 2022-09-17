@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Upload"
+    android:background="@drawable/upload_background"
+
+    >
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_fileName="swachbharatloadingupload.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:visibility="visible"
+        android:id="@+id/loading"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:lottie_fileName="photosendupload.json"
+        app:lottie_loop="false"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="false"
+        android:visibility="gone"
+        android:id="@+id/send_animation"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_fileName="celebration.json"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        android:id="@+id/celebration_animation"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/uploaded_successfully"
+        android:fontFamily="@font/lato"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/celebration_text"
+        android:textSize="28sp"
+        android:shadowRadius="10"
+        android:shadowDy="10"
+        android:shadowDx="10"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/afterClicked"
+    android:visibility="gone">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        app:cardCornerRadius="8dp"
+        android:background="#a6a6a6"
+        app:cardElevation="20dp"
+        android:id="@+id/image_main_upload"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image_main_upload_image"
+            android:contentDescription="@string/main_image"
+            android:scaleType="fitXY"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="@string/location"
+     android:gravity="center"
+     android:layout_below="@id/image_main_upload"
+     android:fontFamily="@font/lato"
+     android:shadowRadius="10"
+     android:shadowDx="10"
+     android:shadowDy="10"
+     android:layout_marginBottom="12dp"
+     android:textColor="#000000"
+     android:id="@+id/location_text"
+     />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_text"
+        android:orientation="horizontal"
+        android:id="@+id/location_layout">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="longitude"
+            android:textColor="#000000"
+            android:fontFamily="@font/lato_light"
+            android:id="@+id/longitude"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="lattitude"
+            android:textColor="#000000"
+            android:fontFamily="@font/lato_light"
+            android:id="@+id/lattitude"
+            />
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/click_another"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/location_layout"
+        android:layout_marginTop="25dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="50dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/click_another_photo"
+            android:fontFamily="@font/lato_light"
+            android:id="@+id/button_click_another"
+            android:background="#ffffff"
+            android:textColor="#2e86de"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/click_upload"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/click_another"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="50dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upload"
+            android:fontFamily="@font/lato_light"
+            android:id="@+id/button_click_upload"
+            android:background="#ffffff"
+            android:textColor="#2e86de"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_upload">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_click_one"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="200dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="40dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="50dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/click_a_photo"
+            android:fontFamily="@font/lato_light"
+            android:id="@+id/button_click_one_button"
+            android:background="#ffffff"
+            android:textColor="#2e86de"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_choose_from_gallery"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/button_click_one"
+        android:focusable="true"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="20dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_from_gallery"
+            android:fontFamily="@font/lato_light"
+            android:id="@+id/button_choose_from_gallery_button"
+            android:background="#ffffff"
+            android:textColor="#2e86de"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:lottie_fileName="clickphotoupload.json"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+    </RelativeLayout>
+
+
+</RelativeLayout>

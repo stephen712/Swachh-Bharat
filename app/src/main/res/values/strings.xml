@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Swachh Bharat</string>
+    <string name="welcome_to_swach_bharat_app">Swachh Bharat</string>
+    <string name="about">About</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="click_a_photo">Click A Photo</string>
+    <string name="select_from_gallery">Select From Gallery</string>
+    <string name="click_another_photo">Click Another Photo</string>
+    <string name="upload">Upload</string>
+    <string name="main_image">Main Image</string>
+    <string name="uploaded_successfully">Uploaded Successfully</string>
+    <string name="location">Location</string>
+    <string name="welcome_to_jatayu_app">Welcome To Jatayu App</string>
+    <string name="please_click_on_above_button_to_show_your_account_details">Please click on above button toshow your account details</string>
+    <string name="logout_google_account">Logout Google Account</string>
+    <string name="admin">Admin</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="continue_">Continue</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="location_">Location</string>
+    <string name="get_on_map">Get On Map</string>
+    <string name="click_on_location_to_get_to">Click On Location to get to</string>
+    <string name="admin_panel">Admin Panel</string>
+</resources>

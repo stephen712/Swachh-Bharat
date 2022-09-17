@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPanel"
+    android:background="@drawable/background_gradient">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_panel"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="28sp"
+        android:id="@+id/text_adminPanel"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/click_on_location_to_get_to"
+        android:id="@+id/click_On_location_text"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_below="@id/text_adminPanel"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_below="@id/click_On_location_text"
+        android:id="@+id/listView"
+
+        >
+
+
+    </ListView>
+
+</RelativeLayout>
